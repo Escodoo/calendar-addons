@@ -42,7 +42,7 @@ msgstr ""
 
 #. module: calendar_meeting_minutes
 #: model_terms:ir.ui.view,arch_db:calendar_meeting_minutes.calendar_event
-msgid "<strong>Facilitator yess</strong>"
+msgid "<strong>Facilitator</strong>"
 msgstr ""
 
 #. module: calendar_meeting_minutes
