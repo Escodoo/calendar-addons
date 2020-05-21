@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 Marcel Savegnago - Escodoo
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <data>
+        <report id="calendar_event_meeting_minutes_report" model="calendar.event" string="Meeting Minutes" report_type="qweb-pdf" name="calendar_meeting_minutes.calendar_event" file="calendar_meeting_minutes.calendar_event" />
+        <template id="calendar_event">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.internal_layout">
+                    <t t-call="web.html_container">
+                        <div class="page">
+                            <div class="text-left">
+                                <h3>
+                                    <span t-field="doc.name" /> - <span>Meeting Minutes</span><br /></h3>
+                            </div>
+                            <table class="col-md-12 table">
+                                <tr style="border: 2px solid black;" t-if="doc.start_date">
+                                    <td>
+                                        <strong>Meeting Date</strong>
+                                    </td>
+                                    <td>
+                                        <span t-field="doc.start_date" />
+                                    </td>
+                                    <td>
+                                        <strong>Meeting Location</strong>
+                                    </td>
+                                    <td>
+                                        <span t-field="doc.location" />
+                                    </td>
+                                </tr>
+                                <tr style="border: 2px solid black;" t-if="doc.start_datetime">
+                                    <div class="col-md-4">
+                                        <td>
+                                            <strong>Meeting Date</strong>
+                                        </td>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <td>
+                                            <span t-field="doc.start_datetime" />
+                                        </td>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <td>
+                                            <strong>Meeting Location </strong>
+                                        </td>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <td>
+                                            <span t-field="doc.location" />
+                                        </td>
+                                    </div>
+                                </tr>
+                            </table>
+                            <table class="col-md-12 table">
+                                <tr class="row-md-12" style="border: 2px solid black;">
+                                    <td>
+                                        <strong>Presenter</strong>
+                                    </td>
+                                    <td>
+                                        <span t-field="doc.meeting_presenter_id" />
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr style="border: 2px solid black;">
+                                    <div class="col-md-4">
+                                        <td>
+                                            <strong>Meeting Called by</strong>
+                                        </td>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <td>
+                                            <span t-field="doc.user_id" />
+                                        </td>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <td>
+                                            <strong>Facilitator yess</strong>
+                                        </td>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <td>
+                                            <span t-field="doc.meeting_facilitator_id" />
+                                        </td>
+                                    </div>
+                                </tr>
+                                <tr style="border: 2px solid black;">
+                                    <div class="col-md-4">
+                                        <td>
+                                            <strong>Note Taker</strong>
+                                        </td>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <td>
+                                            <span t-field="doc.meeting_note_taker_id" />
+                                        </td>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <td>
+                                            <strong>Timekeeper</strong>
+                                        </td>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <td>
+                                            <span t-field="doc.meeting_timekeeper_id" />
+                                        </td>
+                                    </div>
+                                </tr>
+                            </table>
+                            <table class="col-md-12 table">
+                                <tr style="border: 2px solid black;">
+                                    <td>
+                                        <strong>Meeting Attendees</strong>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr t-foreach="doc.partner_ids" t-as="line">
+                                    <td>
+                                        <span t-field="line.name" />
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                            <table class="col-md-12 table">
+                                <tr style="border: 2px solid black;">
+                                    <td>
+                                        <strong>Description/Topics</strong>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr style="border: 2px solid black;">
+                                    <td>
+                                        <span t-field="doc.description" />
+                                    </td>
+                                    <td>
+                                        <strong></strong>
+                                    </td>
+                                </tr>
+                                <tr style="border: 2px solid black;">
+                                    <td>
+                                        <strong>Discussion </strong>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr style="border: 2px solid black;">
+                                    <td>
+                                        <span t-field="doc.meeting_discussion" />
+                                    </td>
+                                    <td>
+                                        <strong></strong>
+                                    </td>
+                                </tr>
+                                <tr style="border: 2px solid black;">
+                                    <td>
+                                        <strong>Action Items</strong>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr style="border: 2px solid black;">
+                                    <td>
+                                        <span t-field="doc.meeting_actions" />
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr style="border: 2px solid black;">
+                                    <td>
+                                        <strong>Conclusion</strong>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr style="border: 2px solid black;">
+                                    <td>
+                                        <span t-field="doc.meeting_conclusion" />
+                                    </td>
+                                    <td>
+                                        <strong></strong>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>
