@@ -14,7 +14,7 @@
     ],
     'data': [
             'views/calendar_event_view.xml',
-            'report/calendar_event_meeting_minutes_report.xml',
+            'reports/calendar_event_meeting_minutes_report.xml',
     ],
     'demo': [
     ],
