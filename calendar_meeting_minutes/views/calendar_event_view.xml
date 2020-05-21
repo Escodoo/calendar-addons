@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 Marcel Savegnago - Escodoo
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+    <data>
+
+        <record id="calendar_event_minutes_calendar_event_form" model="ir.ui.view">
+            <field name="name">calendar.event.form.view (in calendar_meeting_minutes)</field>
+            <field name="model">calendar.event</field>
+            <field name="inherit_id" ref="calendar.view_calendar_event_form"/>
+            <field name="arch" type="xml">
+                <xpath expr = "//page[2]" position="after">
+                    <page string="Meeting Minutes">
+                        <group>
+                            <field name='meeting_presenter_id'/>
+                            <field name="meeting_facilitator_id"/>
+                            <field name="meeting_note_taker_id"/>
+                            <field name="meeting_timekeeper_id"/>
+                        </group>
+                        <group>
+                            <field name="meeting_discussion"/>
+                            <field name="meeting_actions"/>
+                            <field name="meeting_conclusion"/>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+        
+    </data>
+</odoo>
