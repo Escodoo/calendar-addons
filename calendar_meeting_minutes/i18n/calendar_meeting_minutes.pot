@@ -1,0 +1,133 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* calendar_meeting_minutes
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-21 20:35+0000\n"
+"PO-Revision-Date: 2020-05-21 20:35+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: calendar_meeting_minutes
+#: model_terms:ir.ui.view,arch_db:calendar_meeting_minutes.calendar_event
+msgid "- <span>Meeting Minutes</span><br/>"
+msgstr ""
+
+#. module: calendar_meeting_minutes
+#: model_terms:ir.ui.view,arch_db:calendar_meeting_minutes.calendar_event
+msgid "<strong>Action Items</strong>"
+msgstr ""
+
+#. module: calendar_meeting_minutes
+#: model_terms:ir.ui.view,arch_db:calendar_meeting_minutes.calendar_event
+msgid "<strong>Conclusion</strong>"
+msgstr ""
+
+#. module: calendar_meeting_minutes
+#: model_terms:ir.ui.view,arch_db:calendar_meeting_minutes.calendar_event
+msgid "<strong>Description/Topics</strong>"
+msgstr ""
+
+#. module: calendar_meeting_minutes
+#: model_terms:ir.ui.view,arch_db:calendar_meeting_minutes.calendar_event
+msgid "<strong>Discussion </strong>"
+msgstr ""
+
+#. module: calendar_meeting_minutes
+#: model_terms:ir.ui.view,arch_db:calendar_meeting_minutes.calendar_event
+msgid "<strong>Facilitator yess</strong>"
+msgstr ""
+
+#. module: calendar_meeting_minutes
+#: model_terms:ir.ui.view,arch_db:calendar_meeting_minutes.calendar_event
+msgid "<strong>Meeting Attendees</strong>"
+msgstr ""
+
+#. module: calendar_meeting_minutes
+#: model_terms:ir.ui.view,arch_db:calendar_meeting_minutes.calendar_event
+msgid "<strong>Meeting Called by</strong>"
+msgstr ""
+
+#. module: calendar_meeting_minutes
+#: model_terms:ir.ui.view,arch_db:calendar_meeting_minutes.calendar_event
+msgid "<strong>Meeting Date</strong>"
+msgstr ""
+
+#. module: calendar_meeting_minutes
+#: model_terms:ir.ui.view,arch_db:calendar_meeting_minutes.calendar_event
+msgid "<strong>Meeting Location </strong>"
+msgstr ""
+
+#. module: calendar_meeting_minutes
+#: model_terms:ir.ui.view,arch_db:calendar_meeting_minutes.calendar_event
+msgid "<strong>Meeting Location</strong>"
+msgstr ""
+
+#. module: calendar_meeting_minutes
+#: model_terms:ir.ui.view,arch_db:calendar_meeting_minutes.calendar_event
+msgid "<strong>Note Taker</strong>"
+msgstr ""
+
+#. module: calendar_meeting_minutes
+#: model_terms:ir.ui.view,arch_db:calendar_meeting_minutes.calendar_event
+msgid "<strong>Presenter</strong>"
+msgstr ""
+
+#. module: calendar_meeting_minutes
+#: model_terms:ir.ui.view,arch_db:calendar_meeting_minutes.calendar_event
+msgid "<strong>Timekeeper</strong>"
+msgstr ""
+
+#. module: calendar_meeting_minutes
+#: model:ir.model.fields,field_description:calendar_meeting_minutes.field_calendar_event__meeting_actions
+msgid "Action Items"
+msgstr ""
+
+#. module: calendar_meeting_minutes
+#: model:ir.model.fields,field_description:calendar_meeting_minutes.field_calendar_event__meeting_conclusion
+msgid "Conclusion"
+msgstr ""
+
+#. module: calendar_meeting_minutes
+#: model:ir.model.fields,field_description:calendar_meeting_minutes.field_calendar_event__meeting_discussion
+msgid "Discussion"
+msgstr ""
+
+#. module: calendar_meeting_minutes
+#: model:ir.model,name:calendar_meeting_minutes.model_calendar_event
+msgid "Event"
+msgstr ""
+
+#. module: calendar_meeting_minutes
+#: model:ir.model.fields,field_description:calendar_meeting_minutes.field_calendar_event__meeting_facilitator_id
+msgid "Facilitator"
+msgstr ""
+
+#. module: calendar_meeting_minutes
+#: model:ir.actions.report,name:calendar_meeting_minutes.calendar_event_meeting_minutes_report
+#: model_terms:ir.ui.view,arch_db:calendar_meeting_minutes.calendar_event_minutes_calendar_event_form
+msgid "Meeting Minutes"
+msgstr ""
+
+#. module: calendar_meeting_minutes
+#: model:ir.model.fields,field_description:calendar_meeting_minutes.field_calendar_event__meeting_note_taker_id
+msgid "Note Taker"
+msgstr ""
+
+#. module: calendar_meeting_minutes
+#: model:ir.model.fields,field_description:calendar_meeting_minutes.field_calendar_event__meeting_presenter_id
+msgid "Presenter"
+msgstr ""
+
+#. module: calendar_meeting_minutes
+#: model:ir.model.fields,field_description:calendar_meeting_minutes.field_calendar_event__meeting_timekeeper_id
+msgid "Timekeeper"
+msgstr ""
+
